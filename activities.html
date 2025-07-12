@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoTracker - Track Your Activities</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="fade-in">
+    <h1><i class="fas fa-clipboard-list"></i> Daily Activity Tracker</h1>
+    <p>Fill out the form below to calculate your carbon footprint.</p>
+  </header>
+
+  <main class="fade-in">
+    <form id="activity-form" class="form-card">
+      <div class="form-group">
+        <label for="car"><i class="fas fa-car"></i> Distance Driven (km)</label>
+        <input type="number" id="car" placeholder="e.g. 15" min="0">
+        <small>Estimate how far you drive each day.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="electricity"><i class="fas fa-bolt"></i> Electricity Usage (kWh)</label>
+        <input type="number" id="electricity" placeholder="e.g. 8" min="0">
+        <small>Enter your estimated daily energy use.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="meat"><i class="fas fa-drumstick-bite"></i> Meat Meals Per Day</label>
+        <input type="number" id="meat" placeholder="e.g. 2" min="0">
+        <small>Meat production emits high CO₂. Track your diet.</small>
+      </div>
+
+      <button type="submit" class="btn slide-in">Calculate Footprint <i class="fas fa-calculator"></i></button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 EcoTracker. Go green, stay clean. 💚</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
